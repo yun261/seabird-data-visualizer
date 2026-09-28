@@ -6,9 +6,9 @@
 <section class="workspace">
   <div class="step-head"><span>01</span><div><h2>选择数据集</h2><p>三个数据集均来自本项目的海鸟三轴加速度数据，每次可选择一个或两个进行可视化。</p></div></div>
   <div class="dataset-grid">
-    <label class="dataset-card"><input class="dataset-choice" type="checkbox" value="a"><strong>观测数据 A</strong><span class="tag">无标签数据</span><p>CSV 格式；包含时间戳与 acc_x、acc_y、acc_z 三轴加速度，label 列为空。</p><small>来源：项目 2018 年海鸟原始观测数据 · 约 25 Hz</small></label>
-    <label class="dataset-card"><input class="dataset-choice" type="checkbox" value="b" checked><strong>行为标注样本库</strong><span class="tag labeled">有标签数据</span><p>CSV 格式；包含时间戳、三轴加速度和人工整理的行为标签。</p><small>来源：项目海鸟行为标注汇总数据 · 约 25 Hz</small></label>
-    <label class="dataset-card"><input class="dataset-choice" type="checkbox" value="c"><strong>观测数据 B</strong><span class="tag">无标签数据</span><p>CSV 格式；包含时间戳与 acc_x、acc_y、acc_z 三轴加速度，label 列为空。</p><small>来源：项目 2020 年海鸟原始观测数据 · 约 31.25 Hz</small></label>
+    <label class="dataset-card"><input class="dataset-choice" type="checkbox" value="b" checked><strong>行为标注样本库</strong><span class="tag labeled">有标签数据</span><p>CSV 格式；包含时间戳、三轴加速度和人工整理的行为标签。</p><small>来源：项目海鸟行为标注汇总数据</small></label>
+    <label class="dataset-card"><input class="dataset-choice" type="checkbox" value="a"><strong>观测数据 A</strong><span class="tag">无标签数据</span><p>CSV 格式；包含时间戳与 acc_x、acc_y、acc_z 三轴加速度，label 列为空。</p><small>来源：项目 2018 年海鸟原始观测数据</small></label>
+    <label class="dataset-card"><input class="dataset-choice" type="checkbox" value="c"><strong>观测数据 B</strong><span class="tag">无标签数据</span><p>CSV 格式；包含时间戳与 acc_x、acc_y、acc_z 三轴加速度，label 列为空。</p><small>来源：项目 2020 年海鸟原始观测数据</small></label>
   </div>
   <div class="dataset-actions"><button id="loadDatasets" class="primary">加载所选数据</button><span>有标签数据适合行为分布；无标签数据适合加速度趋势和变量关系分析。</span></div>
   <div id="fileList" class="file-list"></div><div id="error" class="error" hidden></div>
